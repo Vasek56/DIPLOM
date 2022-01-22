@@ -1,0 +1,561 @@
+body {
+     margin: 0;
+     padding: 0;
+  }
+  .header {
+     background-image: url(../images/banner-bg.jpg);
+     background-position: center center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     position: relative;
+     z-index: 1;
+     padding: 30px 0 90px;
+     background-color: #000000;
+  }
+  .header::after {
+     content: "";
+     background-color: #000000;
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;;
+     opacity: 0.6;
+     z-index: -2;
+  }
+  
+  
+  .conteiner {
+     max-width: 1200px;
+     margin: 0 auto 0 auto;
+     padding: 0 10px 0 10px;
+  
+  }
+  
+  .conteiner-nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+  }
+  .header-logo {
+     width: 205px;
+  }
+  
+  .menu-list {
+     display: flex;
+     flex-wrap: wrap;
+     list-style: none;
+     padding: 0;
+     margin: 0;  
+  }
+   
+  .menu-link {
+     font-size: 13px;
+     color: #ffffff;
+     font-weight: 400;
+     src: url(../fonts/OpenSans-Regular.ttf);
+     text-decoration: none;
+     text-transform: uppercase;
+  }
+  
+  .menu-list-item:nth-child(n + 2) {
+     margin-left: 35px;
+  }
+  
+  .header-title {
+     max-width: 750px;
+     text-transform: uppercase;
+     src: url(../fonts/OpenSans-Regular.ttf);
+     font-size: 45px;
+     font-weight: 700;
+     line-height: 73px;
+     text-align: center;
+     color: #ffffff;
+     margin-top: 100px;
+     margin-left: 200px;
+  }
+
+  .trends {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+ 
+  .trends_title {
+    text-align: center;
+    text-transform: uppercase;
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-size: 20px;
+    line-height: 29px;
+    color: #0f0d0e;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+ 
+  }
+ 
+  .trends_title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;  
+    background-color: #b59f5b;
+    margin: 5px auto;
+  }
+ 
+  .trends_aside {
+    display: flex;
+  }
+ 
+  .trend_card {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    width: 50%;
+    height: 350px;
+    margin: 2px;
+  }
+ 
+  .trend_card::after {
+    content:"";
+    position: absolute;
+    z-index: 0;
+    background-color: #000000;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.6;
+  }
+ 
+  .trend_body {
+    width: 100%;
+    border: solid 3px rgb(184, 134, 11, 0.7);
+    padding: 30px;
+    margin: 10px;
+    z-index: 1;
+  }
+ 
+  .card_title {
+    text-transform: uppercase;
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+ 
+  .tags_trends {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+   
+  }
+ 
+  .tag_link {
+    text-decoration: none;
+    text-transform: uppercase;
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-size: 14px;
+    font-weight: 700;
+    color: #b59f5b;
+   
+  }
+ 
+  .tag_link:nth-child(n+1) {
+    margin-right: 10px;
+  }
+ 
+  .card1 {
+    background-image: url(../images/trend1.jpg);
+  }
+ 
+  .card2 {
+    background-image: url(../images/trend2.jpg);
+  }
+ 
+  .card3 {
+    background-image: url(../images/trend3.jpg);
+  }
+ 
+  .card4 {
+    background-image: url(../images/trend4.jpg);
+  }
+  
+  .page {
+     width: 1200px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     margin: 0 auto 60px auto;
+     padding-top: 60px;
+     padding-right: 20px;
+     padding-left: 15px;
+     padding-bottom: 5px;
+   
+  }
+  
+  .posts {
+     width: 778px;
+  }
+  
+  .post {
+     display: flex;
+  } 
+  
+  .post-img {
+     width: 380px;
+  }
+  .post-info {    
+     margin-left: 40px;
+  }
+  
+  .tags {
+     display: flex;
+     flex-wrap: wrap;
+     list-style: none;
+     padding: 0;
+     margin: 0;
+  }
+  
+  .tags-list-item:not(:first-child) {
+     margin-left: 30px;
+  }
+  
+  .post-name {
+     margin: 10px 0 0 0;
+  }
+  
+  .tag-link {
+     text-decoration: none;
+     text-transform: uppercase;
+     src: url(../fonts/OpenSans-Regular.ttf);
+     font-size: 14px;
+     font-weight: 700; 
+     color: #b59f5b;
+  }
+  
+  .post-title {
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 20px;
+     font-weight: 700;
+     line-height: 24px;
+     src: url(../fonts/OpenSans-Regular.ttf);
+     color: #0f0d0e;
+  }
+  
+  .date-writer {
+     display: flex;
+     list-style: none;
+     padding-left: 0;
+     margin-top: 20px;
+     margin-bottom: 50px;
+    
+  }
+  
+  .post-date {
+    src: url(../fonts/OpenSans-Regular.ttf);
+     font-size: 12px;
+     font-weight: 400;
+     color: #888888; 
+  }
+  
+  .writer a {
+     text-decoration: none;
+     src: url(../fonts/OpenSans-Regular.ttf);
+     font-size: 12px;
+     font-weight: 700;
+     margin-left: 30px;
+     color: #000000;
+  }
+  
+  .post-content {
+     src: url(../fonts/OpenSans-Regular.ttf);
+     font-size: 15px;
+     font-weight: 400;
+    
+  }
+  
+  .post:nth-child(n+2) {
+     margin-top: 60px;
+  }
+  
+  .post-block { 
+     width: 270px;
+  }
+  
+  .post-block-news,
+  .title-mail,
+  .tag-catalog,
+  .themes-list{
+     src: url(../fonts/OpenSans-Regular.ttf);
+     text-transform: uppercase;
+     font-size: 14px;
+     font-weight: 700;
+     color: #0f0d0e;
+     text-align: center;
+     margin: 0;
+  }
+  
+  .post-block-news::after,
+  .title-mail::after,
+  .tag-catalog::after,
+  .themes-list::after{
+     content: "";
+     display: block;
+     width: 65px;
+     height: 3px;
+     background-color: #b59f5b;
+     margin: 15px 0 20px 90px;
+  }
+  
+  .news {
+     display: flex;
+     align-items: flex-start;
+  }
+  
+  .news-description {
+     margin-left: 10px;
+  }
+  .news-date {
+     src: url(../fonts/OpenSans-Regular.ttf);
+     font-size: 12px;
+     font-weight: 400;
+     color: #888888;
+  }
+  
+  .news-title {
+     margin: 5px 0 0 0;
+     line-height: 17px;
+  }
+  
+  
+  .news-link {
+     text-decoration: none;
+     text-transform: uppercase;
+     src: url(../fonts/OpenSans-Regular.ttf);
+     font-size: 14px;
+     font-weight: 700;
+     color: #000000;
+     line-height: 17px;
+  }
+  
+  .news:nth-child(n + 2) {
+     margin-top: 22px;
+  }
+  
+  .search {
+     margin: 60px 0;
+     display: flex;
+     justify-content: space-between;
+  }
+  
+  .search-group {
+     display: flex;
+     width: 270px;
+  }
+  
+  .button {
+     height: 48px;
+     width: 48px;
+     border: none;
+     background-color: #b59f5b;
+     background-image: url(../svg/search.svg);
+     background-repeat: no-repeat;
+     background-size: 20px auto; 
+     background-position: center center;
+     cursor: pointer;
+  }
+  
+  .button:focus {
+     outline: none;
+     border-color: none;
+  }
+  .field {
+     width: 100%;
+     border: none;
+     background-color: #f5f7f3;
+     src: url(../fonts/OpenSans-Regular.ttf);
+     font-size: 13px;
+     font-weight: 400; 
+     padding: 10px 20px;
+     cursor: text;
+  }
+  
+  .field:focus {
+     outline: none;
+     border-color: none;
+  }
+  
+  .visually-hidden {
+     width: 1px;
+     height: 1px;
+     clip: rect(1px, 1px, 1px, 1px);
+     position: absolute;
+  }
+  
+  .mailing{
+     margin-bottom: 60px;
+  }
+  
+  .mail {
+     display: flex;
+     flex-direction: column;
+  }
+  
+  .email {
+     display: block;
+     height: 48px;
+     border: none;
+     background-color: #f3f7f5;
+     src: url(../fonts/OpenSans-Regular.ttf);
+     font-size: 13px;
+     font-weight: 400; 
+     padding: 5px 20px;
+     cursor: text;
+     color: #000000;
+  }
+  
+  .email:focus {
+     outline: none;
+     border: none;
+  }
+  
+  .button-mail {
+     height: 48px;
+     width: 100%;
+     src: url(../fonts/OpenSans-Regular.ttf);
+     text-transform: uppercase;
+     font-size: 14px;
+     font-weight: 700;
+     color: #ffffff;
+     text-align: center;
+     border: none;
+     background-color: #b59f5b;
+     background-repeat: no-repeat;
+     cursor: pointer;
+     margin-top: 5px;
+  }
+  
+  .button-mail:focus {
+     outline: none;
+     border: none;
+  }
+  
+  .tags-catalog {
+     display: flex;
+     flex-wrap: wrap;
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     justify-content: flex-start;
+  }
+  
+  .tag-link-list {
+     display: block;
+     text-decoration: none;
+     text-transform: uppercase;
+     src: url(../fonts/OpenSans-Regular.ttf);
+     font-size: 12px;
+     font-weight: 700;
+     color: #0f0d0e;
+     padding: 5px;
+  }
+  
+  .tags-catalog-item {
+     margin: 0 6px 6px 0;
+     border: 3px solid #d3d3d3;  
+  }
+  
+  .themes {
+     margin-top: 50px;
+  }
+  .theme-list {
+     list-style: none;
+     justify-content: flex-start;
+     padding-left: 0;
+     margin: 0;
+  }
+  
+  .theme-list-item {
+     display: flex;
+     flex-wrap: wrap;
+     border-bottom: 1px solid #d3d3d3;
+     margin: 10px 15px;
+  }
+  
+  .theme-link {
+     text-decoration: none;
+     src: url(../fonts/OpenSans-Regular.ttf);
+     font-size: 14px;
+     font-weight: 700;
+     color: #000000;
+     margin-top: 5px;
+     margin-bottom: 15px;
+  }
+  
+  .number {
+     src: url(../fonts/OpenSans-Regular.ttf);
+     font-size: 12px;
+     font-weight: 700;
+     color: #b59f5b;
+     vertical-align: super;
+  }
+  
+  .footer {
+     padding-bottom: 40px;
+  }
+  
+  .footer-social {
+     width: 1200px;
+     padding: 0 15px;
+     margin: auto;
+  }
+  
+  .social-network{
+     background-color: #f3f7f5;
+     padding-top: 50px;
+     padding-bottom: 50px;
+  }
+  
+  .social-network-list {
+     display: flex;
+     align-items: center;
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     justify-content: center;
+  }
+  
+  .social-network-list-items:nth-child(n + 2) {
+     margin-left: 30px;
+  }
+  
+  .social-network-icon{
+     display: block;
+  }
+  
+  .icon {
+     width: 20px;
+     height: 20px;
+  }
+  
+  .copyright {
+     display: block;
+     text-decoration: none;
+     margin-top: 40px;
+     src: url(../fonts/OpenSans-Regular.ttf);
+     font-size: 12px;
+     font-weight: 700;
+     color: #999999;
+     text-align: center;
+  }
+
+  
+ 
