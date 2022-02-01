@@ -574,12 +574,20 @@ body {
     background-size: cover;
     width: 300px;
     height: 200px;
-    background-color: #eff6f1;
+    
   }
 
   .product__imgbox1 {
     background-image: url(../images/shop-item-desk1.jpg);
   }
+
+  .product__imgbox2 {
+   background-image: url(../images/shop-item-desk2.jpg);
+ }
+
+ .product__imgbox3 {
+   background-image: url(../images/shop-item-desk3.jpg);
+ }
  
   .product-description {
     width: 300px;
