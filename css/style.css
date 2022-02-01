@@ -576,6 +576,10 @@ body {
     height: 200px;
     background-color: #eff6f1;
   }
+
+  .product__imgbox1 {
+    background-image: url(../images/shop-item-desk1.jpg);
+  }
  
   .product-description {
     width: 300px;
