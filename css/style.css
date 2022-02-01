@@ -134,7 +134,7 @@ body {
   }
  
   .trend_body {
-    width: 20%;
+    width: 100%;
     border: solid 3px rgb(184, 134, 11, 0.7);
     padding: 30px;
     margin: 10px;
