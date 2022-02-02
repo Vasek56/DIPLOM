@@ -1,3 +1,9 @@
+@font-face {
+   font-family: Open;
+   src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+
 body {
      margin: 0;
      padding: 0;
@@ -53,7 +59,7 @@ body {
      font-size: 13px;
      color: #ffffff;
      font-weight: 400;
-     src: url(../fonts/OpenSans-Regular.ttf);
+     font-family: Open;
      text-decoration: none;
      text-transform: uppercase;
   }
@@ -65,7 +71,7 @@ body {
   .header-title {
      max-width: 750px;
      text-transform: uppercase;
-     src: url(../fonts/OpenSans-Regular.ttf);
+     font-family: Open;
      font-size: 45px;
      font-weight: 700;
      line-height: 73px;
@@ -83,7 +89,7 @@ body {
   .trends_title {
     text-align: center;
     text-transform: uppercase;
-    src: url(../fonts/OpenSans-Regular.ttf);
+    font-family: Open;
     font-size: 20px;
     line-height: 29px;
     color: #0f0d0e;
@@ -135,7 +141,7 @@ body {
  
   .trend_body {
     width: 100%;
-    border: solid 3px rgb(184, 134, 11, 0.7);
+    border: solid 3px #b59f5b;
     padding: 30px;
     margin: 10px;
     z-index: 1;
@@ -143,7 +149,7 @@ body {
  
   .card_title {
     text-transform: uppercase;
-    src: url(../fonts/OpenSans-Regular.ttf);
+    font-family: Open;
     font-size: 15px;
     font-weight: 700;
     color: #ffffff;
@@ -160,7 +166,7 @@ body {
   .tag_link {
     text-decoration: none;
     text-transform: uppercase;
-    src: url(../fonts/OpenSans-Regular.ttf);
+    font-family: Open;
     font-size: 14px;
     font-weight: 700;
     color: #b59f5b;
@@ -234,7 +240,7 @@ body {
   .tag-link {
      text-decoration: none;
      text-transform: uppercase;
-     src: url(../fonts/OpenSans-Regular.ttf);
+     font-family: Open;
      font-size: 14px;
      font-weight: 700; 
      color: #b59f5b;
@@ -246,7 +252,7 @@ body {
      font-size: 20px;
      font-weight: 700;
      line-height: 24px;
-     src: url(../fonts/OpenSans-Regular.ttf);
+     font-family: Open;
      color: #0f0d0e;
   }
   
@@ -260,7 +266,7 @@ body {
   }
   
   .post-date {
-    src: url(../fonts/OpenSans-Regular.ttf);
+     font-family: Open;
      font-size: 12px;
      font-weight: 400;
      color: #888888; 
@@ -268,7 +274,7 @@ body {
   
   .writer a {
      text-decoration: none;
-     src: url(../fonts/OpenSans-Regular.ttf);
+     font-family: Open;
      font-size: 12px;
      font-weight: 700;
      margin-left: 30px;
@@ -276,7 +282,7 @@ body {
   }
   
   .post-content {
-     src: url(../fonts/OpenSans-Regular.ttf);
+    font-family: Open;
      font-size: 15px;
      font-weight: 400;
     
@@ -294,7 +300,7 @@ body {
   .title-mail,
   .tag-catalog,
   .themes-list{
-     src: url(../fonts/OpenSans-Regular.ttf);
+     font-family: Open;
      text-transform: uppercase;
      font-size: 14px;
      font-weight: 700;
@@ -324,7 +330,7 @@ body {
      margin-left: 10px;
   }
   .news-date {
-     src: url(../fonts/OpenSans-Regular.ttf);
+     font-family: Open;
      font-size: 12px;
      font-weight: 400;
      color: #888888;
@@ -339,7 +345,7 @@ body {
   .news-link {
      text-decoration: none;
      text-transform: uppercase;
-     src: url(../fonts/OpenSans-Regular.ttf);
+     font-family: Open;
      font-size: 14px;
      font-weight: 700;
      color: #000000;
@@ -381,7 +387,7 @@ body {
      width: 100%;
      border: none;
      background-color: #f5f7f3;
-     src: url(../fonts/OpenSans-Regular.ttf);
+     font-family: Open;
      font-size: 13px;
      font-weight: 400; 
      padding: 10px 20px;
@@ -414,7 +420,7 @@ body {
      height: 48px;
      border: none;
      background-color: #f3f7f5;
-     src: url(../fonts/OpenSans-Regular.ttf);
+     font-family: Open;
      font-size: 13px;
      font-weight: 400; 
      padding: 5px 20px;
@@ -430,7 +436,7 @@ body {
   .button-mail {
      height: 48px;
      width: 100%;
-     src: url(../fonts/OpenSans-Regular.ttf);
+     font-family: Open;
      text-transform: uppercase;
      font-size: 14px;
      font-weight: 700;
@@ -461,7 +467,7 @@ body {
      display: block;
      text-decoration: none;
      text-transform: uppercase;
-     src: url(../fonts/OpenSans-Regular.ttf);
+     font-family: Open;
      font-size: 12px;
      font-weight: 700;
      color: #0f0d0e;
@@ -492,7 +498,7 @@ body {
   
   .theme-link {
      text-decoration: none;
-     src: url(../fonts/OpenSans-Regular.ttf);
+     font-family: Open;
      font-size: 14px;
      font-weight: 700;
      color: #000000;
@@ -501,7 +507,7 @@ body {
   }
   
   .number {
-     src: url(../fonts/OpenSans-Regular.ttf);
+    font-family: Open;
      font-size: 12px;
      font-weight: 700;
      color: #b59f5b;
@@ -512,7 +518,7 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
-    margin: 50px;
+    margin: 50px 100px 100px 100px;
   }
  
   .products {
@@ -524,7 +530,7 @@ body {
   .product__title {
     text-align: center;
     text-transform: uppercase;
-    font-family: opensans, Arial, sans-serif;
+    font-family: Open;
     font-size: 20px;
     line-height: 29px;
     color: #0f0d0e;
@@ -596,7 +602,7 @@ body {
     line-height: 22px;
     color: #0f0d0e;
     font-weight: 400;
-    font-family: Open Sans; 
+    font-family: Open; 
    }
  
   .product-link {
@@ -619,7 +625,7 @@ body {
   }
  
   .product__prices {
-    max-width: 60px;
+    max-width: 70px;
   }
  
   .product__price {
@@ -627,7 +633,7 @@ body {
     line-height: 24px;
     color: #0f0d0e;
     font-weight: 700;
-    font-family: Open Sans;
+    font-family: Open;
     flex-direction: column; 
   }
  
@@ -637,7 +643,7 @@ body {
     text-decoration: line-through;
     color: #0f0d0e;
     font-weight: 700;
-    font-family: Open Sans;
+    font-family: Open;
   }
  
   .product__button {
@@ -651,12 +657,8 @@ body {
     line-height: 40px;
     color: #ffffff;
     font-weight: 700;
-    font-family: Open Sans;
+    font-family: Open;
     z-index: 1;
-  }
- 
-  .product__button:hover {
-    background-color: #313131;
   }
   
   .footer {
@@ -701,7 +703,7 @@ body {
      display: block;
      text-decoration: none;
      margin-top: 40px;
-     src: url(../fonts/OpenSans-Regular.ttf);
+     font-family: Open;
      font-size: 12px;
      font-weight: 700;
      color: #999999;
