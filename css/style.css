@@ -1,7 +1,13 @@
 @font-face {
-   font-family: Open;
+   font-family: Open R;
    src: url(../fonts/OpenSans-Regular.ttf);
 }
+
+@font-face {
+   font-family: Open B;
+   src: url(../fonts/OpenSans-Bold.ttf)
+}
+
 
 
 body {
@@ -59,7 +65,7 @@ body {
      font-size: 13px;
      color: #ffffff;
      font-weight: 400;
-     font-family: Open;
+     font-family: Open R;
      text-decoration: none;
      text-transform: uppercase;
   }
@@ -71,7 +77,7 @@ body {
   .header-title {
      max-width: 750px;
      text-transform: uppercase;
-     font-family: Open;
+     font-family: Open B;
      font-size: 45px;
      font-weight: 700;
      line-height: 73px;
@@ -89,7 +95,7 @@ body {
   .trends_title {
     text-align: center;
     text-transform: uppercase;
-    font-family: Open;
+    font-family: Open R;
     font-size: 20px;
     line-height: 29px;
     color: #0f0d0e;
@@ -149,7 +155,7 @@ body {
  
   .card_title {
     text-transform: uppercase;
-    font-family: Open;
+    font-family: Open R;
     font-size: 15px;
     font-weight: 700;
     color: #ffffff;
@@ -166,7 +172,7 @@ body {
   .tag_link {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: Open;
+    font-family: Open R;
     font-size: 14px;
     font-weight: 700;
     color: #b59f5b;
@@ -240,7 +246,7 @@ body {
   .tag-link {
      text-decoration: none;
      text-transform: uppercase;
-     font-family: Open;
+     font-family: Open B;
      font-size: 14px;
      font-weight: 700; 
      color: #b59f5b;
@@ -252,7 +258,7 @@ body {
      font-size: 20px;
      font-weight: 700;
      line-height: 24px;
-     font-family: Open;
+     font-family: Open B;
      color: #0f0d0e;
   }
   
@@ -266,7 +272,7 @@ body {
   }
   
   .post-date {
-     font-family: Open;
+     font-family: Open R;
      font-size: 12px;
      font-weight: 400;
      color: #888888; 
@@ -274,7 +280,7 @@ body {
   
   .writer a {
      text-decoration: none;
-     font-family: Open;
+     font-family: Open R;
      font-size: 12px;
      font-weight: 700;
      margin-left: 30px;
@@ -282,7 +288,7 @@ body {
   }
   
   .post-content {
-    font-family: Open;
+    font-family: Open R;
      font-size: 15px;
      font-weight: 400;
     
@@ -300,7 +306,7 @@ body {
   .title-mail,
   .tag-catalog,
   .themes-list{
-     font-family: Open;
+     font-family: Open B;
      text-transform: uppercase;
      font-size: 14px;
      font-weight: 700;
@@ -318,7 +324,7 @@ body {
      width: 65px;
      height: 3px;
      background-color: #b59f5b;
-     margin: 15px 0 20px 90px;
+     margin: 10px 0 20px 103px;
   }
   
   .news {
@@ -330,7 +336,7 @@ body {
      margin-left: 10px;
   }
   .news-date {
-     font-family: Open;
+     font-family: Open R;
      font-size: 12px;
      font-weight: 400;
      color: #888888;
@@ -345,7 +351,7 @@ body {
   .news-link {
      text-decoration: none;
      text-transform: uppercase;
-     font-family: Open;
+     font-family: Open B;
      font-size: 14px;
      font-weight: 700;
      color: #000000;
@@ -387,7 +393,7 @@ body {
      width: 100%;
      border: none;
      background-color: #f5f7f3;
-     font-family: Open;
+     font-family: Open R;
      font-size: 13px;
      font-weight: 400; 
      padding: 10px 20px;
@@ -420,7 +426,7 @@ body {
      height: 48px;
      border: none;
      background-color: #f3f7f5;
-     font-family: Open;
+     font-family: Open R;
      font-size: 13px;
      font-weight: 400; 
      padding: 5px 20px;
@@ -436,7 +442,7 @@ body {
   .button-mail {
      height: 48px;
      width: 100%;
-     font-family: Open;
+     font-family: Open R;
      text-transform: uppercase;
      font-size: 14px;
      font-weight: 700;
@@ -467,7 +473,7 @@ body {
      display: block;
      text-decoration: none;
      text-transform: uppercase;
-     font-family: Open;
+     font-family: Open R;
      font-size: 12px;
      font-weight: 700;
      color: #0f0d0e;
@@ -498,7 +504,7 @@ body {
   
   .theme-link {
      text-decoration: none;
-     font-family: Open;
+     font-family: Open R;
      font-size: 14px;
      font-weight: 700;
      color: #000000;
@@ -507,7 +513,7 @@ body {
   }
   
   .number {
-    font-family: Open;
+    font-family: Open R;
      font-size: 12px;
      font-weight: 700;
      color: #b59f5b;
@@ -518,7 +524,7 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
-    margin: 50px 100px 100px 100px;
+    margin: 50px auto 100px auto;
   }
  
   .products {
@@ -526,11 +532,11 @@ body {
     align-items: flex-start;
   }
  
-  .product_title,
+  .product_head,
   .product__title {
     text-align: center;
     text-transform: uppercase;
-    font-family: Open;
+    font-family: Open R;
     font-size: 20px;
     line-height: 29px;
     color: #0f0d0e;
@@ -539,7 +545,7 @@ body {
     margin-bottom: 20px;
   }
  
-  .product_title::after {
+  .product_head::after {
     content: "";
     display: block;
     width: 65px;
@@ -562,7 +568,7 @@ body {
     right: -20px;
     position: absolute;
     width: 345px;
-    height: 260px;
+    min-height: 260px;
     background-color: rgba(0, 0, 0, 0);
     outline: 3px solid #b59f5b;
     margin-top: 150px;
@@ -602,7 +608,7 @@ body {
     line-height: 22px;
     color: #0f0d0e;
     font-weight: 400;
-    font-family: Open; 
+    font-family: Open R; 
    }
  
   .product-link {
@@ -633,7 +639,7 @@ body {
     line-height: 24px;
     color: #0f0d0e;
     font-weight: 700;
-    font-family: Open;
+    font-family: Open R;
     flex-direction: column; 
   }
  
@@ -643,7 +649,7 @@ body {
     text-decoration: line-through;
     color: #0f0d0e;
     font-weight: 700;
-    font-family: Open;
+    font-family: Open R;
   }
  
   .product__button {
@@ -657,7 +663,7 @@ body {
     line-height: 40px;
     color: #ffffff;
     font-weight: 700;
-    font-family: Open;
+    font-family: Open R;
     z-index: 1;
   }
   
@@ -703,7 +709,7 @@ body {
      display: block;
      text-decoration: none;
      margin-top: 40px;
-     font-family: Open;
+     font-family: Open R;
      font-size: 12px;
      font-weight: 700;
      color: #999999;
