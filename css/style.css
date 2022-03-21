@@ -95,7 +95,7 @@ body {
   .trends_title {
     text-align: center;
     text-transform: uppercase;
-    font-family: Open R;
+    font-family: Open B;
     font-size: 20px;
     line-height: 29px;
     color: #0f0d0e;
@@ -477,11 +477,11 @@ body {
      font-size: 12px;
      font-weight: 700;
      color: #0f0d0e;
-     padding: 5px;
+     margin: 3px;
   }
   
   .tags-catalog-item {
-     margin: 0 6px 6px 0;
+     margin: 0 5px 5px 0;
      border: 3px solid #d3d3d3;  
   }
   
@@ -536,7 +536,7 @@ body {
   .product__title {
     text-align: center;
     text-transform: uppercase;
-    font-family: Open R;
+    font-family: Open B;
     font-size: 20px;
     line-height: 29px;
     color: #0f0d0e;
@@ -601,9 +601,9 @@ body {
    background-image: url(../images/shop-item-desk3.jpg);
  }
  
-  .product-description {
+  .product__description {
     width: 300px;
-    height: 60px;
+    min-height: 60px;
     font-size: 15px;
     line-height: 22px;
     color: #0f0d0e;
@@ -628,6 +628,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding-bottom: 10px;
   }
  
   .product__prices {
@@ -655,6 +656,8 @@ body {
   .product__button {
     background-color: #b59f5b;
     border: 0px solid #dfe0df;
+    text-decoration: none;
+    text-align: center;
     box-sizing: border-box;
     min-width: 120px;
     min-height: 40px;
