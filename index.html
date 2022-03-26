@@ -40,9 +40,9 @@
           </h1>
         </div>
     </header>
-   <div class="trends">
+   <section class="trends">
       <h2 class="trends_title">Сейчас в тренде</h2>
-       <section class="trends_section">
+       <div class="trends_section">
         <article class="trend_card card1">
             <div class="trend_body">
               <ul class="tags_trends">
@@ -87,8 +87,8 @@
               <h3 class="card_title">Сейчас в тренде: сколько витамина С в лимонах?</h3>
             </div>
           </article>
-        </section>   
-    </div>
+        </div>   
+     </section>
 
      <div class="page">
           <main class="posts">
@@ -440,21 +440,21 @@
             </section>
         </aside>
      </div>
-
-       <div class="product_container">
-                <h2 class="product_head">Наши изделия</h2>
-             <section class="products">
+           <section class = "product_container">
+              <h2 class="product_head">Наши изделия</h2>
+               <div class="products">
                   <article class="product">
-                         <div class="product__imgbox1">
-                           <div class="product__img"  alt="Подушка"></div>
-                          </div>
+                           <picture class="product__imgbox" 
+                             <source media = "(min-width: 1200px)" src="images/shop-item-desk1.jpg">
+                             <source media = "(min-width: 641px) and (max-width: 1199px)" src="images/shop-item-tablet1.jpg">
+                             <source media = "(max-width: 640px)"" src="images/shop-item-mobile1.jpg">
+                             <img class = card__img src="images/shop-item-desk1.jpg" alt="Подушки на диван">
+                           </picture>
                       <div class="product__body">
-                             <div class="product__content">
                                <h3 class="product__title">Подушки на диван</h3>
                                <div class="product__description">
                                   <p>Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="product-link">здесь</a>.</p>
                                 </div>
-                              </div>
                            <footer class="product__footer">
                                   <div class="product__prices">
                                      <span class="product__price product__price_old">
@@ -472,19 +472,18 @@
                    </article>
       
                   <article class="product">
-                           <div class="product__imgbox2">
-                           <div class="product__img" alt="Зайчик"></div>
-                           </div>
+                     <picture class="product__imgbox" 
+                           <source media = "(min-width: 1200px)" src="images/shop-item-desk2.jpg">
+                           <source media = "(min-width: 641px) and (max-width: 1199px)" src="images/shop-item-tablet2.jpg">
+                          <source media = "(max-width: 640px)"" src="images/shop-item-mobile2.jpg">
+                          <img class = card__img src="images/shop-item-desk2.jpg" alt="Кукла «Зайчик»">
+                    </picture>
                         <div class="product__body">
-                               <div class="product__content">
                                     <h3 class="product__title">Кукла «Зайчик»</h3>
                                     <div class="product__description">
                                       <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="product-link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
-                                      <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="product-link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
-                                      <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="product-link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
                                     </div>
-                               </div>
-                            <footer class="product__footer">
+                              <footer class="product__footer">
                                     <div class="product__prices">
                                       <span class="product__price">
                                        <span class="product__price-value">3500</span>
@@ -497,16 +496,17 @@
                    </article>
   
                    <article class="product">
-                             <div class="product__imgbox3">
-                             <div class="product__img" alt="Ваза"></div>
-                           </div>
+                           <picture class="product__imgbox" 
+                              <source media = "(min-width: 1200px)" src="images/shop-item-desk3.jpg">
+                              <source media = "(min-width: 641px) and (max-width: 1199px)" src="images/shop-item-tablet3.jpg">
+                              <source media = "(max-width: 640px)"" src="images/shop-item-mobile3.jpg">
+                              <img class = card__img src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
+                           </picture>
                         <div class="product__body">
-                                <div class="product__content">
                                      <h3 class="product__title">Шестиугольная рамка</h3>
                                      <div class="product__description">
                                      <p>Необычная рамка для украшения дома из видео <a href="#" class="product-link">«Как сделать рамку из подручных средств за 30 минут.</a> </p>
                                     </div>
-                                </div>
                             <footer class="product__footer">
                                   <div class="product__prices">
                                      <span class="product__price product__price_old">
@@ -522,8 +522,8 @@
                              </footer>
                           </div>
                      </article>
-               </section>
-         </div> 
+                    </div>
+              </section> 
       <footer class="footer">
         <div class="footer-social"> 
           <address class="social-network">
