@@ -815,7 +815,7 @@ body {
    margin-left: 7%;
  }
  .product {
-   width: calc(100%/2);
+   width: calc(95%/2);
  }
  .product:nth-child(n+2) {
    margin-left: 1%;
