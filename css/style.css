@@ -90,10 +90,10 @@ body {
   .trends {
     margin-top: 40px;
     margin-bottom: 40px;
-  }
- 
-  .trends_title,
-  .product_head {
+   }
+
+ .trends_title,
+ .product_head {
     text-align: center;
     text-transform: uppercase;
     font-family: Open B;
@@ -103,106 +103,99 @@ body {
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 20px;
- 
-  }
- 
-  .trends_title::after,
-  .product_head::after {
+   }
+
+ .trends_title::after,
+ .product_head::after {
     content: "";
     display: block;
     width: 65px;
     height: 3px;  
     background-color: #b59f5b;
     margin: 5px auto;
-  }
- 
-  .trends_section {
+   }
+
+ .trends_section {
     display: flex;
- 
-   
+    flex-wrap: wrap;
     
-  }
- 
-  .trend_card {
-    background-repeat: no-repeat;
-    background-position: center center;
+   }
+
+ .trend_card {
+    z-index: 0;
     background-size: cover;
     position: relative;
     box-sizing: border-box;
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-end;
-    justify-content: center;
     width: 50%;
-    height: 350px;
     margin: 2px;
-  }
- 
-  .trend_card::after {
+   }
+
+ .trend_card::after {
     content:"";
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     background-color: #000000;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     opacity: 0.6;
-  }
- 
-  .trend_body {
+   }
+
+ .trend_body {
     width: 100%;
     border: solid 3px #b59f5b;
     padding: 30px;
-    margin: 10px;
-    z-index: 1;
-  }
- 
-  .card_title {
+    
+   }
+
+ .card_title {
     text-transform: uppercase;
     font-family: Open R;
     font-size: 15px;
     font-weight: 700;
     color: #ffffff;
-  }
- 
-  .tags_trends {
+   }
+ .tags_trends {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
-   
-  }
- 
-  .tag_link {
+    
+   }
+
+ .tag_link {
     text-decoration: none;
     text-transform: uppercase;
     font-family: Open R;
     font-size: 14px;
     font-weight: 700;
     color: #b59f5b;
-   
+   }
+
+ .tag_link:nth-child(n+1) {
+    margin-right: 20px;
   }
  
-  .tag_link:nth-child(n+1) {
-    margin-right: 10px;
-  }
- 
-  .card1 {
+ .card1 {
     background-image: url(../images/trend1.jpg);
-  }
- 
-  .card2 {
+ }
+
+ .card2 {
     background-image: url(../images/trend2.jpg);
-  }
- 
-  .card3 {
+ }
+
+ .card3 {
     background-image: url(../images/trend3.jpg);
-  }
- 
-  .card4 {
+ }
+
+ .card4 {
     background-image: url(../images/trend4.jpg);
-  }
+ }
+
   
   .page {
      max-width: 1200px;
@@ -789,8 +782,15 @@ body {
     max-width: 700px;
  }
  .trend_card {
-   width: calc(100% / 2);
+   width: calc((100% / 2)-3px);
    min-height: 250px;
+ }
+ .trend_card:nth-child(n + 3) {
+   margin-top: 3px;
+ }
+ 
+ .trend_card:nth-child(n + 2) {
+   margin-left: 20px;
  }
 
  .posts {
@@ -829,10 +829,17 @@ body {
    }
    
  @media (min-width: 641px) and (orientation: landscape) {
-   .trend__card {
+   .trend_card {
       width: calc(100% / 2);
       min-height: 250px;
    }
+   .trend_card:nth-child(n + 2) {
+     margin-left: 1px;
+   }  
+   .trend_card:nth-child(n + 3) {
+    margin-top: 1px;
+   }
+
 }
 
 
