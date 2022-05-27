@@ -90,9 +90,10 @@ body {
   .trends {
     margin-top: 40px;
     margin-bottom: 40px;
-  }
- 
-  .trends_title {
+   }
+
+ .trends_title,
+ .product_head {
     text-align: center;
     text-transform: uppercase;
     font-family: Open B;
@@ -102,102 +103,99 @@ body {
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 20px;
- 
-  }
- 
-  .trends_title::after {
+   }
+
+ .trends_title::after,
+ .product_head::after {
     content: "";
     display: block;
     width: 65px;
     height: 3px;  
     background-color: #b59f5b;
     margin: 5px auto;
-  }
- 
-  .trends_section {
+   }
+
+ .trends_section {
     display: flex;
-  }
- 
-  .trend_card {
-    background-repeat: no-repeat;
-    background-position: center center;
+    flex-wrap: wrap;
+    
+   }
+
+ .trend_card {
+    z-index: 0;
     background-size: cover;
     position: relative;
     box-sizing: border-box;
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-end;
-    justify-content: center;
     width: 50%;
-    height: 350px;
     margin: 2px;
-  }
- 
-  .trend_card::after {
+   }
+
+ .trend_card::after {
     content:"";
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     background-color: #000000;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     opacity: 0.6;
-  }
- 
-  .trend_body {
+   }
+
+ .trend_body {
     width: 100%;
     border: solid 3px #b59f5b;
     padding: 30px;
-    margin: 10px;
-    z-index: 1;
-  }
- 
-  .card_title {
+    
+   }
+
+ .card_title {
     text-transform: uppercase;
     font-family: Open R;
     font-size: 15px;
     font-weight: 700;
     color: #ffffff;
-  }
- 
-  .tags_trends {
+   }
+ .tags_trends {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
-   
-  }
- 
-  .tag_link {
+    
+   }
+
+ .tag_link {
     text-decoration: none;
     text-transform: uppercase;
     font-family: Open R;
     font-size: 14px;
     font-weight: 700;
     color: #b59f5b;
-   
+   }
+
+ .tag_link:nth-child(n+1) {
+    margin-right: 20px;
   }
  
-  .tag_link:nth-child(n+1) {
-    margin-right: 10px;
-  }
- 
-  .card1 {
+ .card1 {
     background-image: url(../images/trend1.jpg);
-  }
- 
-  .card2 {
+ }
+
+ .card2 {
     background-image: url(../images/trend2.jpg);
-  }
- 
-  .card3 {
+ }
+
+ .card3 {
     background-image: url(../images/trend3.jpg);
-  }
- 
-  .card4 {
+ }
+
+ .card4 {
     background-image: url(../images/trend4.jpg);
-  }
+ }
+
   
   .page {
      max-width: 1200px;
@@ -464,8 +462,8 @@ body {
      display: flex;
      flex-wrap: wrap;
      list-style: none;
-     padding: 0;
      margin: 0;
+     padding: 0;
      justify-content: flex-start;
   }
   
@@ -473,15 +471,16 @@ body {
      display: block;
      text-decoration: none;
      text-transform: uppercase;
-     font-family: Open R;
+     font-family: Open B;
      font-size: 12px;
      font-weight: 700;
      color: #0f0d0e;
-     margin: 3px;
+     margin: 5px 10px 5px 10px;
+     
   }
   
   .tags-catalog-item {
-     margin: 0 5px 5px 0;
+     margin: 0 6px 6px 0;
      border: 3px solid #d3d3d3;  
   }
   
@@ -504,7 +503,7 @@ body {
   
   .theme-link {
      text-decoration: none;
-     font-family: Open R;
+     font-family: Open B;
      font-size: 14px;
      font-weight: 700;
      color: #000000;
@@ -521,85 +520,47 @@ body {
   }
 
   .product_container {
-    display: flex;
-    flex-direction: column;
     max-width: 1200px;
-    margin: 50px auto 100px auto;
-  }
- 
+    margin: 0 auto 40px auto;
+   }
+
   .products {
     display: flex;
-    align-items: flex-start;
-  }
+    flex-wrap: wrap;
+    justify-content: space-between;
+   }
  
-  .product_head,
   .product__title {
-    text-align: center;
     text-transform: uppercase;
     font-family: Open B;
     font-size: 20px;
     line-height: 29px;
     color: #0f0d0e;
     font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
- 
-  .product_head::after {
-    content: "";
-    display: block;
-    width: 65px;
-    height: 3px;  
-    background-color: #b59f5b;
-    margin: 5px auto;
-  }
- 
-  .product {
-    width: 30%;
-    margin: 50px;
-    position: relative;
+    margin-top: 50px;
+    margin-bottom: 10px;
    }
  
-  .product::after {
-    content: " ";
-    top: 0;
-    bottom: 0;
-    left: -20px;
-    right: -20px;
-    position: absolute;
-    width: 345px;
-    min-height: 260px;
-    background-color: rgba(0, 0, 0, 0);
-    outline: 3px solid #b59f5b;
-    margin-top: 150px;
-    margin-right: 0px;
-    align-items: center;
-    justify-content: center;
-    z-index: 0;
-  }
  
-  .product__imgbox1,
-  .product__imgbox2,
-  .product__imgbox3 {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    width: 300px;
-    height: 200px;
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+  
+  .product__body {
+    margin-top: -60px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid #b59f5b;
+    padding: 20px;
+    flex-grow: 2;
+    opacity: 1;
     
+   }
+
+  .product__imgbox {
+    padding: 10px 10px;
   }
-
-  .product__imgbox1 {
-    background-image: url(../images/shop-item-desk1.jpg);
-  }
-
-  .product__imgbox2 {
-   background-image: url(../images/shop-item-desk2.jpg);
- }
-
- .product__imgbox3 {
-   background-image: url(../images/shop-item-desk3.jpg);
- }
  
   .product__description {
     width: 300px;
@@ -640,7 +601,7 @@ body {
     line-height: 24px;
     color: #0f0d0e;
     font-weight: 700;
-    font-family: Open R;
+    font-family: Open B;
     flex-direction: column; 
   }
  
@@ -650,7 +611,7 @@ body {
     text-decoration: line-through;
     color: #0f0d0e;
     font-weight: 700;
-    font-family: Open R;
+    font-family: Open B;
   }
  
   .product__button {
@@ -682,8 +643,8 @@ body {
   
   .social-network{
      background-color: #f3f7f5;
-     padding-top: 50px;
-     padding-bottom: 50px;
+     padding-top: 20px;
+     padding-bottom: 20px;
   }
   
   .social-network-list {
@@ -719,5 +680,171 @@ body {
      text-align: center;
   }
 
+
+  /*desktop*/
+
+@media (min-width: 1200px) {
+   .header {
+     min-width: 1200px;
+     min-height: 450px;
+   }
+   
+   .conteiner {
+     max-width: 1200px;
+   }
+   
+   .trends_section {
+     min-width: 1200px;
+   }
+   
+   .page,
+   .product_container,
+   .footer-social {
+     max-width: 1200px;
+   }
+   
+   .shop__card {
+     width: 30%;
+   }
+   
+   .shop__card:nth-child(n + 2) {
+   margin-left: 5%;
+    }
+   .post-info {
+     width: 48%
+   }
+ .burger_1 {
+   display: none;
+    }
+
+}
+
+/*menu*/
+
+.menu_burger {
+   position: relative;
+   text-indent: -9999px;
+   width: 35px;
+   height: 25px;
+   border: none;
+   background-color: transparent;
+   padding: 0;
+   cursor: default;
   
+ }
+ .menu_mobile {
+   position: absolute;
+   left: 0;
+   bottom: 40%;
+   width: 100%;
+   height: 20%;
+   background-color: #ffffff;
+ 
+ }
+ .menu_burger::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 20%;
+   background-color: #ffffff;
+ }
+
+ .menu_burger::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0;   
+   width: 100%;
+   height: 20%;
+   background-color: #ffffff;
+ }
+
+
+ /*tablet*/
+
+@media (min-width: 641px) and (max-width: 1199px) {
+ 
+ .header {
+   max-width: 1200px;
+   background-image: url(../images/banner-bg-tablet.jpg)
+ }
+ .page,
+ .product_container,
+ .footer-social {
+   max-width: 700px;
+ }
+ .trends { 
+   max-width: 1199px;
+ }
+ .conteiner {
+    max-width: 700px;
+ }
+ .trend_card {
+   width: calc((100% / 2)-3px);
+   min-height: 250px;
+ }
+ .trend_card:nth-child(n + 3) {
+   margin-top: 3px;
+ }
+ 
+ .trend_card:nth-child(n + 2) {
+   margin-left: 20px;
+ }
+
+ .posts {
+   width: 57%;
+ }
+ .post {
+   flex-wrap: wrap;
+ }
+ .post-info {
+   margin-left: 0;
+ }
+ .post-img {
+   object-fit: cover;
+   height: 100%;
+   width: 100%;
+ }
+ .tags{
+   margin-top: 15px;
+ }
+ .post-block{
+   width: 36%;
+   margin-left: 7%;
+ }
+ .product {
+   width: calc(95%/2);
+ }
+ .product:nth-child(n+2) {
+   margin-left: 1%;
+ }
+}
+@media (max-width: 1199px) {
+   .menu-list {
+      display: none;
+      }
+
+   }
+   
+ @media (min-width: 641px) and (orientation: landscape) {
+   .trend_card {
+      width: calc(100% / 2);
+      min-height: 250px;
+   }
+   .trend_card:nth-child(n + 2) {
+     margin-left: 1px;
+   }  
+   .trend_card:nth-child(n + 3) {
+    margin-top: 1px;
+   }
+
+}
+
+
+
+
+ 
+
  
